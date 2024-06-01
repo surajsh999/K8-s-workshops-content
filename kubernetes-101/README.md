@@ -164,7 +164,7 @@ kubectl get pods
 kubectl  describe pod init-demo2 
 ```
 
-## service file for multiple init containers
+service file for multiple init containers
 
 ```
 apiVersion: v1
