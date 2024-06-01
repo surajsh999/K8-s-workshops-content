@@ -287,10 +287,11 @@ spec:
      args: ["--cpu", "2"] 
      #args: ["--vm","1","--vm-bytes", "250M", "--vm-hang", "1"] 
 ```
+`kubectl top nodes`
 In the above you are asking for 2 but you will the throttled and it will be under the limit which is 1
-change CPU to 3
+change CPU to 3, dont forget to change metadata: name: limit-test1 and apply the changes then check again in 'kubectl top nodes'  and `kubectl  describe pod limit-test1'
 
-##deployments
+## deployments
 ```
 kubectl create deploy demo --image=nginx 
 kubectl set image deployment/nginx nginx=nginx:1.15.2 --record
