@@ -254,11 +254,12 @@ spec:
   restartPolicy: Always
 status: {}
 ```
-demo with path to `demo` for failure and also change httpGet to `tcpSocket`
+demo with path to `/demo` for failure and also change httpGet to `tcpSocket`
 ```
 tcpSocket:
   port: 8080
 ```
+`kubectl describe pod nginx`
 change the port to 80 for success scenario 
 
 ## Resource request demo
