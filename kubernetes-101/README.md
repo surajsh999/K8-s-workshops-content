@@ -225,7 +225,8 @@ spec:
         sleep 2;
       done
 ```
-
+`kubectl describe pod multi-container`
+`kubectl logs -f multi-container -c nginx-container`
 `kubectl exec -it multi-container -c nginx-container -- curl localhost`
 
 ## container probes
