@@ -124,6 +124,12 @@ spec:
 ```
 
 exec into the post and curl localhost to see if the HTML got changed
+```
+kubectl exec -it init-demo1 -- sh
+```
+```
+curl localhost
+```
 
 multiple init containers 
 
