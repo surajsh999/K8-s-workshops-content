@@ -363,6 +363,11 @@ echo "Hello from Saiyam" >> /usr/share/nginx/html/index.html
 kubectl exec -it web-1 -- bash
 echo "Hello from Saiyam" >> /usr/share/nginx/html/index.html
 
+curl localhost
+or
+curl web-0.nginx
+or
+curl web-0.nginx.default.svc.cluster.local
 ```
 
 
