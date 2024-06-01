@@ -91,7 +91,7 @@ kubectl get ep
 ```
 
 ## init container
-
+vi init
 ```
 apiVersion: v1
 kind: Pod
@@ -122,17 +122,21 @@ spec:
   - name: shared
     emptyDir: {}
 ```
-
+```
+kubectl apply -f init
+```
 exec into the post and curl localhost to see if the HTML got changed
 ```
+kubectl get pods
 kubectl exec -it init-demo1 -- sh
-```
-```
 curl localhost
+exit
 ```
 
-multiple init containers 
-
+## multiple init containers 
+```
+vi multi
+```
 
 ```
 apiVersion: v1 
@@ -154,6 +158,13 @@ spec:
      image: busybox:1.28
      command: ['sh', '-c', "until nslookup dbservice.$(cat /var/run/secrets/kubernetes.io/serviceaccount/namespace).svc.cluster.local; do echo waiting for dbservice; sleep 2 ; done"]
 ```
+```
+kubectl apply -f multi
+kubectl get pods
+kubectl  describe pod init-demo2 
+```
+
+## service file for multiple init containers
 
 ```
 apiVersion: v1
@@ -176,6 +187,11 @@ spec:
   - port: 80
     protocol: TCP
     targetPort: 80
+```
+```
+kubectl create -f svc
+kubectl get pods
+kubectl  describe pod init-demo2
 ```
 
 ## multi container
