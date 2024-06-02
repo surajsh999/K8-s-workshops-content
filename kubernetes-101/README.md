@@ -509,3 +509,14 @@ proxy
 kubectl proxy --port=8080 &s
 curl localhost:8080/apis/apps/v1/deployments
 ```
+
+
+
+![Image 1](https://raw.githubusercontent.com/surajsh999/K8-s-workshops-content/main/kubernetes-101/tmpl/Kubernetes%20workshop_page-0001.jpg)
+![Image 2](https://raw.githubusercontent.com/surajsh999/K8-s-workshops-content/main/kubernetes-101/tmpl/Kubernetes%20workshop_page-0002.jpg)
+![Image 3](https://raw.githubusercontent.com/surajsh999/K8-s-workshops-content/main/kubernetes-101/tmpl/Kubernetes%20workshop_page-0003.jpg)
+![Image 4](https://raw.githubusercontent.com/surajsh999/K8-s-workshops-content/main/kubernetes-101/tmpl/Kubernetes%20workshop_page-0004.jpg)
+![Image 5](https://raw.githubusercontent.com/surajsh999/K8-s-workshops-content/main/kubernetes-101/tmpl/Kubernetes%20workshop_page-0005.jpg)
+![Image 6](https://raw.githubusercontent.com/surajsh999/K8-s-workshops-content/main/kubernetes-101/tmpl/Kubernetes%20workshop_page-0006.jpg)
+![Image 7](https://raw.githubusercontent.com/surajsh999/K8-s-workshops-content/main/kubernetes-101/tmpl/Kubernetes%20workshop_page-0007.jpg)
+![Image 8](https://raw.githubusercontent.com/surajsh999/K8-s-workshops-content/main/kubernetes-101/tmpl/Kubernetes%20workshop_page-0008.jpg)
