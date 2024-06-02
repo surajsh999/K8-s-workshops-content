@@ -87,6 +87,19 @@ kubectl label pod nginx2 run=nginx --overwrite
 kubectl expose pod nginx --port 80 --dry-run=client -oyaml
 kubectl expose pod nginx --port 80  
 kubectl get ep
+kubectl get svc
+
+if ip doesn't show up in get svc 
+
+kubectl delete svc nginx
+curl 10.104.218.39       (the ip from get svc)
+
+ but we cannot access from out side to access edit svc
+
+kubectl edit svc nginx       (and edit (type: NodePort) at the end)
+
+kubectl get svc       (check type and copy port (80:30440/TCP) 
+                                 the check localhost :30440 )
 
 ```
 
